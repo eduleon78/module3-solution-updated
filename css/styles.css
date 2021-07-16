@@ -1,0 +1,155 @@
+body {
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+    background-color: #B2B1B9;
+    padding: 20px;
+    border-radius: 0;
+    border: 0;
+    border: 2px solid black;
+}
+
+.navbar-brand {
+    padding-top: 0;
+}
+
+.navbar-brand h1 { /* Florida News Now */
+    font-family:'Courier New', Courier, monospace;
+    color: #000;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+
+.navbar-brand p { /* Mantente informado */
+    color: #000;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-top: 15px;
+}
+
+.navbar-brand p span { /* Star K */
+    vertical-align: middle;
+}
+
+#nav-list {
+    margin-top: 20px;
+}
+
+#nav-list a {
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#nav-list a:hover {
+    background: #E7E7E7;
+}
+
+#nav-list li {
+    border: 2px solid #000;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid #000;
+}
+
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -30px;
+}
+
+/* END HEADER */
+
+/* HOME PAGE */
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+.container .jumbotron {
+    color: #000;
+    margin-top: 30px;
+  }
+
+h2 {
+    border: 2px solid black;
+    margin: 0;
+}
+  
+#chicken-tile, #beef-tile, #sushi-tile {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+    background-color: #B2B1B9;
+  }
+
+#chicken-tile span, #beef-tile span, #sushi-tile span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #000;
+  }
+
+  p {
+      color: black;
+      padding: 40px;
+      font-weight: bolder;
+  }
+  
+  /* END HOME PAGE */
+
+  /********** Large devices only **********/
+@media (min-width: 1200px) {
+    #nav-list a {
+        visibility: hidden;
+    }
+    #nav-list li {
+        visibility: hidden;
+    }
+  }
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) { 
+    /* Home Page */
+    #nav-list a {
+        visibility: hidden;
+    }
+    #nav-list li {
+        visibility: hidden;
+    }
+    /* End Home Page */
+  }
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Home Page */
+    #nav-list a {
+        visibility: hidden;
+    }
+    #nav-list li {
+        visibility: hidden;
+    }
+    /* End Home Page */
+  }
+
+  /* Home Page */
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+    margin: 0;
+  }
